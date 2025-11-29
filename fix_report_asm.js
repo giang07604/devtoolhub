@@ -27,6 +27,7 @@ fetch(
     tbodyRows.forEach(function (row, index) {
       row.querySelector("td:nth-child(3)").textContent = studentCode[index];
     });
+    console.log("Processed successfully, you can close this tab")
   })
   .catch((error) => {
     console.error("Đã xảy ra lỗi:", error);
